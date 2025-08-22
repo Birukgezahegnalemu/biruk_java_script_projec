@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM Manipulation
+        </title>
+        <style>
+            body{
+                background-color: yellow;
+            }
+            h1{
+                color:red;
+                text-decoration:underline;
+            }
+            p{
+                color: chocolate;
+            }
+            .js_is_good{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">
+            welcome to DOM Manipulation in js
+        </h1>
+        <p>
+            Hello!
+        </p>
+        <p>
+            how are you?
+        </p>
+        <script>
+            var div=document.createElement("div");
+            div.id="js_project";
+            div.className="js_is_good";
+            div.innerHTML="js is the best!";
+            document.body.append(div);
+            /*var heading=document.getElementById("heading").innerHTML="&#128512"*/;
+            document.write("we welcome you")
+        </script>
+    </body>
+</html>
