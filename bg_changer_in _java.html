@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            bg_changer_in_java
+        </title>
+        <style>
+            h1{
+                color: red;
+                text-decoration: underline;
+            }
+            .dark{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            welcome to bg changer in java
+        </h1>
+        <button onclick="gogreen()">
+            background changer
+        </button>
+        <button onclick="welcome_to_my_web()">
+            text pull up
+        </button>
+        <p id="demo">
+            
+        </p>
+        <script>
+            function gogreen(){
+                document.body.className="dark"
+            }
+            function welcome_to_my_web(){
+               /* div=document.createElement("div")
+                div.id=("demo")
+                document.getElementById("demo").innerHTML="welcome to my web"
+                body.append(div)*/ 
+                document.getElementById("demo").innerHTML="welcome to my web"
+            } 
+        </script>
+    </body>
+</html>
